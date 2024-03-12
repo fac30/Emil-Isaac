@@ -1,0 +1,16 @@
+{
+  "name": "emil-isaac",
+  "version": "1.0.0",
+  "description": "This repository contains the code for a dynamic web application built using Node.js, Express, and integration with external APIs. The application queries at least two APIs and presents useful and/or interesting information to the user.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Emil and Isaac",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
