@@ -23,10 +23,16 @@
           <h1>Museum Near Me</h1>
         </div>
       </div>
-      <div class="buttonDiv">
-        <div class="buttonFind">
-          <button id="buttonFind">Find museum</button>
-        </div>
+      <div class="post-Code-Div">
+        <form action="/api/search" method="POST">
+          <label for="post-code">Post Code:</label>
+          <input type="text" name="post-code" id="post-code" placeholder="Enter a post code here">
+          <div class="buttonDiv">
+            <div class="buttonFind">
+              <button id="buttonFind">Find museum</button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
     
@@ -50,7 +56,7 @@
   </div>
       
     
-    <script src="../utils/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 

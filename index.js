@@ -1,13 +1,13 @@
 import express from "express";
+import apiRoutes from "./routes/api.js";
+
 const app = express();
-const PORT = 3000;
-
-// app.get("/", (req, res) => {
-//   res.send("Hello, Server is working fine");
-// });
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}.`);
-});
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static("public"));
+app.use(express.json()); // Parse JSON requests
+app.use("/api", apiRoutes);
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
