@@ -7,9 +7,10 @@ function findMuseumMapHandler(e) {
   e.preventDefault(); // Prevent default form submission
 
   const postCode = document.getElementById("post-code").value;
+  mapContainer.style.display = "block";
 
   // Send a POST request to the Express server
-  fetch(`https://www.google.com/maps/search/Museums/${postCode}`, {
+  fetch("/api/search", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -35,7 +36,6 @@ function findMuseumMapHandler(e) {
       });
 
       // Make the map container visible
-      mapContainer.style.display = "block";
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
