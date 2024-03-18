@@ -91,27 +91,16 @@ display: flex;
   font-size: 1.2em;
 }
 
-
-
-
 #map-container{
   display: none;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-
-
-
-/* 
-.hero-section{
-  height: 100%;
+#map{
+  height: 700px;  
   width: 100%;
 }
-
-.background-image {
-  height: 100%;
-  width: 100%;
-  text-align: center; 
-} */
 
 h1 {
   color: #333;

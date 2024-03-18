@@ -7,15 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- <section class="hero-section">
-      <img class="background-image" src="./images/NationalMaritimeM.jpg" alt="National Maritime museum">  
-      <div class="museum-div">
-        <h1>Museum Near Me</h1>
-      </div>
-      <div class="buttonFind">
-        <button>Find museum</button>
-      </div>
-    </section> -->
     <section class="hero-section">
       <img class="background-image" src="./images/NationalMaritimeM.jpg" alt="National Maritime museum">  
       <div class="heading-content">
@@ -38,7 +29,7 @@
     
   </div>
   <div id="map-container" class="container">
-  <!-- Placeholder for Google Maps API content -->
+    <div id="map"></div>
   </div>
   <div id="museum-list" class="container">
   <h2>Museums Near You</h2>
@@ -56,7 +47,10 @@
   </div>
       
     
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key="AIzaSyD5wLe3GZugjVUYfmog8gsj27VnKplYcVI"&loading=async&callback=initMap">
+</script> 
   </body>
 </html>
 
