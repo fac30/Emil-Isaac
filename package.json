@@ -1,19 +1,18 @@
 {
-  "name": "emil-isaac",
+  "name": "weekendproject",
   "version": "1.0.0",
-  "description": "This repository contains the code for a dynamic web application built using Node.js, Express, and integration with external APIs. The application queries at least two APIs and presents useful and/or interesting information to the user.",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Emil and Isaac",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.18.3",
-    "node-fetch": "^3.3.2"
+    "express": "^4.19.1"
   }
 }
