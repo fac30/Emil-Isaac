@@ -133,3 +133,6 @@ h1 {
     height: 300px;
   }
 }
+li {
+  cursor: pointer;
+}
