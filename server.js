@@ -1,20 +1,18 @@
 import express from "express";
 
+import "dotenv/config";
+
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.static("public"));
-app.use(express.json()); // Parse JSON requests
+app.use(express.json()); 
+
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-// function initMap() {
-//   var options = {
-//     center: { lat: 51.5081, lng: 0.0759 },
-//     zoom: 8,
-//   };
 
-//   map = new google.maps.Map(document.getElementById("map"), options);
-// }
